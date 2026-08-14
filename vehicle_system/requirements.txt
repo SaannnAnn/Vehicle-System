@@ -1,0 +1,8 @@
+Django==6.1
+djangorestframework==3.18.0
+django-filter==26.1
+python-decouple==3.8
+dj-database-url==3.1.2
+gunicorn
+psycopg[binary]
+whitenoise
