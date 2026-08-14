@@ -210,5 +210,6 @@ supporting Django + Postgres. General steps:
 5. Serve static files (e.g. via `whitenoise`) since `DEBUG=False` disables Django's
    built-in static file serving.
 
-_Add your live deployment URL here once hosted:_
-`[Add deployed API URL]`
+_## Live API
+
+https://your-api-name.onrender.com/api/
