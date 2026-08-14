@@ -17,8 +17,7 @@ SECRET_KEY = config("SECRET_KEY", default="django-insecure-change-me-in-producti
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config("DEBUG", default=True, cast=bool)
 
-ALLOWED_HOSTS = config("ALLOWED_HOSTS", default="localhost,127.0.0.1", cast=Csv())
-
+ALLOWED_HOSTS = ["*"]
 
 # Application definition
 
@@ -99,7 +98,7 @@ if not DEBUG:
     SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
     SESSION_COOKIE_SECURE = True
     CSRF_COOKIE_SECURE = True
-    
+
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
